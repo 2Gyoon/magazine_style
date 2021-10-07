@@ -4,21 +4,21 @@
   box-sizing: border-box;
 }
 
-#bookCover{
+.bookCover{
   display: flex;
   height: 100vh;
 }
-#bookCover .left{
+.bookCover .left{
   background-color: #fff;
   width: 50%;
   position: relative;
 }
-#bookCover .left .btn{
+.bookCover .left .btn{
   position: absolute;
   top: 25px;
   left: 40px;
 }
-#bookCover .left .btn--prev{
+.bookCover .left .btn--prev{
   color: #a7a7a7;
   text-decoration: underline;
   font-size: 20px;
@@ -26,7 +26,7 @@
   align-items: center;
   cursor: pointer;
 }
-#bookCover .left .btn--prev::before{
+.bookCover .left .btn--prev::before{
   content: "";
   display: block;
   width: 70px;
@@ -35,12 +35,12 @@
   margin-right: 5px;
   margin-top: 5px;
 }
-#bookCover .left .title_part{
+.bookCover .left .title_part{
   width: 100%;
   position: absolute;
   top: 150px;
 }
-#bookCover .left .title_part h1{
+.bookCover .left .title_part h1{
   font-size: 80px;
   position: absolute;
   top: 50px;
@@ -48,13 +48,13 @@
   transform: translateX(-50%);
   font-family: 'Times New Roman', Times, serif;
 }
-#bookCover .left .title_part .circle{
+.bookCover .left .title_part .circle{
   width: 200px;
   height: 400px;
   background-color: #ede0df;
   border-radius: 0 200px 200px 0;
 }
-#bookCover .left .sns{
+.bookCover .left .sns{
   position: absolute;
   display: flex;
   align-items: center;
@@ -62,7 +62,7 @@
   top: 60%;  
   left: -140px;
 }
-#bookCover .left .sns::after{
+.bookCover .left .sns::after{
   content: "";
   display: block;
   width: 150px;
@@ -70,12 +70,12 @@
   background-color: #333;
   margin-left: 20px;
 }
-#bookCover .left .sns a{
+.bookCover .left .sns a{
   color: #333;
   font-weight: bold;
   margin-right: 40px;
 }
-#bookCover .left .info{
+.bookCover .left .info{
   display: flex;
   width: 100%;
   align-items: center;
@@ -83,13 +83,13 @@
   position: absolute;
   bottom: 40px;
 }
-#bookCover .left .info p{
+.bookCover .left .info p{
   color: #333;
   display: flex;
   align-items: center;
   font-size: 13px;
 }
-#bookCover .left .info p:last-child::before{
+.bookCover .left .info p:last-child::before{
   content: "";
   display: block;
   width: 200px;
@@ -98,29 +98,29 @@
   margin-left: 20px;
   margin-right: 20px;
 }
-#bookCover .left .content{
+.bookCover .left .content{
   width: 270px;
   position: absolute;
   bottom: 40px;
   right: -25px;
   z-index: 1;
 }
-#bookCover .left .content::before{
+.bookCover .left .content::before{
   content: "";
   display: block;
   width: 100%;
   height: 2px;
   background-color: #333;
 }
-#bookCover .left .content p{
+.bookCover .left .content p{
   padding-right: 90px;
 }
-#bookCover .left .content p:first-child{
+.bookCover .left .content p:first-child{
   padding-top: 20px;
   line-height: 1.2;
   font-size: 14px;
 }
-#bookCover .left .content p:last-child{
+.bookCover .left .content p:last-child{
   padding-top: 50px;
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
@@ -131,17 +131,17 @@
 
 
 
-#bookCover .right{
+.bookCover .right{
   background-color: #ede0df;
   width: 50%;
   position: relative;
 }
-#bookCover .right .btn{
+.bookCover .right .btn{
   position: absolute;
   top: 25px;
   right: 40px;
 }
-#bookCover .right .btn--next{
+.bookCover .right .btn--next{
   color: #a7a7a7;
   text-decoration: underline;
   font-size: 20px;
@@ -149,7 +149,7 @@
   align-items: center;
   cursor: pointer;
 }
-#bookCover .right .btn--next::after{
+.bookCover .right .btn--next::after{
   content: "";
   display: block;
   width: 70px;
@@ -158,7 +158,7 @@
   margin-left: 5px;
   margin-top: 5px;
 }
-#bookCover .right .index{
+.bookCover .right .index{
   position: absolute;
   right: 40px;
   height: 350px;
@@ -166,17 +166,17 @@
   bottom: 0;
   margin: auto 0;
 }
-#bookCover .right .index ul{}
-#bookCover .right .index ul li{
+.bookCover .right .index ul{}
+.bookCover .right .index ul li{
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
 }
-#bookCover .right .index ul li:first-child{
+.bookCover .right .index ul li:first-child{
   font-size: 30px;
 }
-#bookCover .right .index ul li:first-child::after{
+.bookCover .right .index ul li:first-child::after{
   content: "";
   display: block;
   margin: 30px auto 0;
@@ -184,10 +184,10 @@
   height: 150px;
   background-color: #000;
 }
-#bookCover .right .index ul li:last-child{
+.bookCover .right .index ul li:last-child{
   margin-bottom: 0;
 }
-#bookCover .right .square{
+.bookCover .right .square{
   position: absolute;
   border: 2px solid #fff;
   width: 450px;
@@ -196,7 +196,7 @@
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
 }
-#bookCover .right .image_part{
+.bookCover .right .image_part{
   width: 400px;
   height: 800px;
   background-image: url(../image/candle.jpg);
@@ -217,7 +217,7 @@
 
 
 
-#bookCover .main_title{
+.bookCover .main_title{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -227,8 +227,8 @@
   align-items: center;
   font-weight: bold;
 }
-#bookCover .main_title::before,
-#bookCover .main_title::after{
+.bookCover .main_title::before,
+.bookCover .main_title::after{
   content: "";
   width: 2px;
   height: 2px;
@@ -236,7 +236,7 @@
   margin: 10px;
   border-radius: 50%;
 }
-#bookCover .see_all{
+.bookCover .see_all{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -245,4 +245,71 @@
   color: #a7a7a7;
   font-size: 18px;
   cursor: pointer;
+}
+
+
+
+
+
+/* 테스트용 */
+.bookCover:nth-child(2) .left .title_part .circle{
+  background-color: rgb(152, 178, 255);
+}
+.bookCover:nth-child(2) .right{
+  background-color: rgb(152, 178, 255);
+}
+.bookCover:nth-child(3) .left .title_part .circle{
+  background-color: rgb(1, 146, 1);
+}
+.bookCover:nth-child(3) .right{
+  background-color: rgb(1, 146, 1);
+}
+
+.btn{
+  position: fixed;
+  top: 25px;
+  z-index: 2;
+}
+.btn.btn--prev{
+  left: 40px;
+}
+.btn--prev{
+  color: #a7a7a7;
+  text-decoration: underline;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.btn--prev::before{
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: #a7a7a7;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.btn.btn--next{
+  right: 40px;
+}
+.btn--next{
+  color: #fff;
+  text-decoration: underline;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.btn--next::after{
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: #fff;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.swiper-container{
+  overflow: hidden;
 }
