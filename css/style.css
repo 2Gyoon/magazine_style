@@ -30,29 +30,29 @@
   content: "";
   display: block;
   width: 70px;
-  height: 1px;
+  height: 2px;
   background-color: #a7a7a7;
   margin-right: 5px;
+  margin-top: 5px;
 }
 #bookCover .left .title_part{
   width: 100%;
   position: absolute;
   top: 150px;
-  left: -200px;
 }
 #bookCover .left .title_part h1{
   font-size: 80px;
   position: absolute;
   top: 50px;
-  left: 50%;
+  left: 250px;
   transform: translateX(-50%);
   font-family: 'Times New Roman', Times, serif;
 }
 #bookCover .left .title_part .circle{
-  width: 400px;
+  width: 200px;
   height: 400px;
   background-color: #ede0df;
-  border-radius: 50%;
+  border-radius: 0 200px 200px 0;
 }
 #bookCover .left .sns{
   position: absolute;
@@ -77,10 +77,11 @@
 }
 #bookCover .left .info{
   display: flex;
+  width: 100%;
   align-items: center;
+  justify-content: center;
   position: absolute;
   bottom: 40px;
-  left: 150px;
 }
 #bookCover .left .info p{
   color: #333;
@@ -102,7 +103,7 @@
   position: absolute;
   bottom: 40px;
   right: -25px;
-
+  z-index: 1;
 }
 #bookCover .left .content::before{
   content: "";
@@ -133,7 +134,86 @@
 #bookCover .right{
   background-color: #ede0df;
   width: 50%;
+  position: relative;
 }
+#bookCover .right .btn{
+  position: absolute;
+  top: 25px;
+  right: 40px;
+}
+#bookCover .right .btn--next{
+  color: #a7a7a7;
+  text-decoration: underline;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#bookCover .right .btn--next::after{
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: #a7a7a7;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+#bookCover .right .index{
+  position: absolute;
+  right: 40px;
+  height: 350px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+#bookCover .right .index ul{}
+#bookCover .right .index ul li{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#bookCover .right .index ul li:first-child{
+  font-size: 30px;
+}
+#bookCover .right .index ul li:first-child::after{
+  content: "";
+  display: block;
+  margin: 30px auto 0;
+  width: 2px;
+  height: 150px;
+  background-color: #000;
+}
+#bookCover .right .index ul li:last-child{
+  margin-bottom: 0;
+}
+#bookCover .right .square{
+  position: absolute;
+  border: 2px solid #fff;
+  width: 450px;
+  height: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+#bookCover .right .image_part{
+  width: 400px;
+  height: 800px;
+  background-image: url(../image/candle.jpg);
+  background-size: cover;
+  background-position: 30%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+
+
+
 
 
 
