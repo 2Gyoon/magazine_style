@@ -173,10 +173,10 @@
   text-align: center;
   margin-bottom: 30px;
 }
-.bookCover .right .index ul li:first-child{
+.bookCover .right .index ul li.now_page{
   font-size: 30px;
 }
-.bookCover .right .index ul li:first-child::after{
+.bookCover .right .index ul li.now_page:not(:last-child):after{
   content: "";
   display: block;
   margin: 30px auto 0;
@@ -258,12 +258,36 @@
 .bookCover:nth-child(2) .right{
   background-color: rgb(152, 178, 255);
 }
+.bookCover:nth-child(2) .right .image_part{
+  background-image: url(../image/livingroom.jpg);
+  background-position: 15%;
+}
 .bookCover:nth-child(3) .left .title_part .circle{
   background-color: rgb(1, 146, 1);
 }
 .bookCover:nth-child(3) .right{
   background-color: rgb(1, 146, 1);
 }
+.bookCover:nth-child(3) .right .image_part{
+  background-image: url(../image/food.jpg);
+  background-size: 100% 100%;
+}
+.bookCover:nth-child(4) .left .title_part .circle{
+  background-color: #ffcf00;
+}
+.bookCover:nth-child(4) .right{
+  background-color: #ffcf00;
+}
+.bookCover:nth-child(4) .right .index ul li.now_page::before{
+  content: "";
+  display: block;
+  margin: 0 auto 30px;
+  width: 2px;
+  height: 150px;
+  background-color: #000;
+}
+
+
 
 .btn{
   position: fixed;

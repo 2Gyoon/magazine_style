@@ -10,7 +10,7 @@ const swiper = new Swiper('.swiper-container', {
 
 const prev = document.querySelector('.btn--prev');
 const next = document.querySelector('.btn--next');
-const last = document.querySelector('.swiper-slide:nth-child(3)');
+const last = document.querySelector('.swiper-slide:nth-child(4)');
 const first = document.querySelector('.swiper-slide:nth-child(1)');
 
 next.addEventListener('click', function () {
@@ -28,4 +28,10 @@ prev.addEventListener('click', function () {
   if (first.classList.contains('swiper-slide-active') === true) {
     prev.style.display = "none"
   }
+})
+
+
+let now = document.querySelectorAll(".now");
+now.forEach(n => {
+  n.textContent = `${new Date().getFullYear()}.${new Date().getMonth() + 1}.${new Date().getDate()}`
 })
