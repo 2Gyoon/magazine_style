@@ -44,8 +44,7 @@
   font-size: 80px;
   position: absolute;
   top: 50px;
-  left: 250px;
-  transform: translateX(-50%);
+  left: 60px;
   font-family: 'Times New Roman', Times, serif;
 }
 .bookCover .left .title_part .circle{
@@ -293,17 +292,18 @@
   position: fixed;
   top: 25px;
   z-index: 2;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 .btn.btn--prev{
   left: 40px;
 }
 .btn--prev{
   color: #a7a7a7;
-  text-decoration: underline;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+
 }
 .btn--prev::before{
   content: "";
@@ -319,11 +319,6 @@
 }
 .btn--next{
   color: #fff;
-  text-decoration: underline;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
 }
 .btn--next::after{
   content: "";
@@ -332,7 +327,7 @@
   height: 2px;
   background-color: #fff;
   margin-left: 5px;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 .swiper-container{
   overflow: hidden;
