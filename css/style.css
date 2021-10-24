@@ -272,10 +272,15 @@
   background-size: 100% 100%;
 }
 .bookCover:nth-child(4) .left .title_part .circle{
-  background-color: #ffcf00;
+  background-color: #ffd854;
 }
 .bookCover:nth-child(4) .right{
-  background-color: #ffcf00;
+  background-color: #ffd854;
+}
+.bookCover:nth-child(4) .right .image_part{
+  width: 700px;
+  height: 600px;
+  background-image: url(../image/aboutme.png);
 }
 .bookCover:nth-child(4) .right .index ul li.now_page::before{
   content: "";
